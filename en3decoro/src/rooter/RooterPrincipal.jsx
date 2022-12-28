@@ -24,6 +24,7 @@ export const RooterPrincipal = () => {
             <Route path='/accesorios' element={<Producto typeProduct='accesorios' />} />
             <Route path='/accesorios/:id' element={<ProductoDesc />} />
             <Route path='/contacto' element={<Contacto header='Contacto' />} />
+            <Route path='*' element={<Navigate to='/inicio' />} />
           </Routes>
         </>
 
